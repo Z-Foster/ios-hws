@@ -19,7 +19,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewPerson")
+        load()
     }
+    
+    // MARK - addNewPerson, and helpers.
     
     func addNewPerson() {
         let picker = UIImagePickerController()
@@ -27,6 +30,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         picker.delegate = self
         presentViewController(picker, animated: true, completion: nil)
     }
+    
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    func save() {
+        let savedData = NSKeyedArchiver.archivedDataWithRootObject(people)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(savedData, forKey: "people")
+    }
+    
+    func load() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if let savedPeople = defaults.objectForKey("people") as? NSData {
+            people = NSKeyedUnarchiver.unarchiveObjectWithData(savedPeople) as! [Person]
+        }
+    }
+    
+    // MARK - imagePickerController protocol
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -53,16 +78,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let newPerson = Person(name: "Unknown", imagePath: imagePath)
             people.append(newPerson)
             collectionView.reloadData()
+            save()
         }
         
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
+    // MARK - collectionView protocol
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let thisPerson = people[indexPath.item]
@@ -75,6 +97,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             thisPerson.name = ac.textFields![0].text!
             
             self.collectionView.reloadData()
+            self.save()
         })
         presentViewController(ac, animated: true, completion: nil)
     }
