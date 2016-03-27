@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project21_local_notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-pl-kyb">
+                                <rect key="frame" x="248" y="285" width="105" height="30"/>
+                                <state key="normal" title="Schedule Local"/>
+                                <connections>
+                                    <action selector="scheduleLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXV-hi-daG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-99-Nn2">
+                                <rect key="frame" x="248" y="198" width="105" height="30"/>
+                                <state key="normal" title="Register Local"/>
+                                <connections>
+                                    <action selector="registerLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wd-eo-yY9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sF0-pl-kyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1iT-Yu-3IP"/>
+                            <constraint firstItem="4oG-99-Nn2" firstAttribute="height" secondItem="sF0-pl-kyb" secondAttribute="height" id="DhP-pD-RZu"/>
+                            <constraint firstItem="4oG-99-Nn2" firstAttribute="width" secondItem="sF0-pl-kyb" secondAttribute="width" id="RaU-4u-0YO"/>
+                            <constraint firstItem="sF0-pl-kyb" firstAttribute="top" secondItem="4oG-99-Nn2" secondAttribute="bottom" constant="57" id="iPS-1f-rN7"/>
+                            <constraint firstItem="4oG-99-Nn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixT-BA-riX"/>
+                            <constraint firstItem="sF0-pl-kyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wXW-da-PtZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="302"/>
+        </scene>
+    </scenes>
+</document>

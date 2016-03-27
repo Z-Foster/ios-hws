@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926A693E1C99E04100387339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A693D1C99E04100387339 /* AppDelegate.swift */; };
+		926A69401C99E04100387339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A693F1C99E04100387339 /* ViewController.swift */; };
+		926A69431C99E04100387339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A69411C99E04100387339 /* Main.storyboard */; };
+		926A69451C99E04100387339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926A69441C99E04100387339 /* Assets.xcassets */; };
+		926A69481C99E04100387339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A69461C99E04100387339 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		926A693A1C99E04100387339 /* Project25-selfie-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project25-selfie-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		926A693D1C99E04100387339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		926A693F1C99E04100387339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		926A69421C99E04100387339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		926A69441C99E04100387339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		926A69471C99E04100387339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		926A69491C99E04100387339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		926A69371C99E04100387339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926A69311C99E04000387339 = {
+			isa = PBXGroup;
+			children = (
+				926A693C1C99E04100387339 /* Project25-selfie-share */,
+				926A693B1C99E04100387339 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		926A693B1C99E04100387339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				926A693A1C99E04100387339 /* Project25-selfie-share.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		926A693C1C99E04100387339 /* Project25-selfie-share */ = {
+			isa = PBXGroup;
+			children = (
+				926A693D1C99E04100387339 /* AppDelegate.swift */,
+				926A693F1C99E04100387339 /* ViewController.swift */,
+				926A69411C99E04100387339 /* Main.storyboard */,
+				926A69441C99E04100387339 /* Assets.xcassets */,
+				926A69461C99E04100387339 /* LaunchScreen.storyboard */,
+				926A69491C99E04100387339 /* Info.plist */,
+			);
+			path = "Project25-selfie-share";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		926A69391C99E04100387339 /* Project25-selfie-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926A694C1C99E04100387339 /* Build configuration list for PBXNativeTarget "Project25-selfie-share" */;
+			buildPhases = (
+				926A69361C99E04100387339 /* Sources */,
+				926A69371C99E04100387339 /* Frameworks */,
+				926A69381C99E04100387339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project25-selfie-share";
+			productName = "Project25-selfie-share";
+			productReference = 926A693A1C99E04100387339 /* Project25-selfie-share.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		926A69321C99E04000387339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Zach Foster";
+				TargetAttributes = {
+					926A69391C99E04100387339 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WZ3FSG8JJ8;
+					};
+				};
+			};
+			buildConfigurationList = 926A69351C99E04000387339 /* Build configuration list for PBXProject "Project25-selfie-share" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 926A69311C99E04000387339;
+			productRefGroup = 926A693B1C99E04100387339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				926A69391C99E04100387339 /* Project25-selfie-share */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		926A69381C99E04100387339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926A69481C99E04100387339 /* LaunchScreen.storyboard in Resources */,
+				926A69451C99E04100387339 /* Assets.xcassets in Resources */,
+				926A69431C99E04100387339 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		926A69361C99E04100387339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926A69401C99E04100387339 /* ViewController.swift in Sources */,
+				926A693E1C99E04100387339 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		926A69411C99E04100387339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				926A69421C99E04100387339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		926A69461C99E04100387339 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				926A69471C99E04100387339 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		926A694A1C99E04100387339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		926A694B1C99E04100387339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		926A694D1C99E04100387339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project25-selfie-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zfost.Project25-selfie-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		926A694E1C99E04100387339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project25-selfie-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zfost.Project25-selfie-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		926A69351C99E04000387339 /* Build configuration list for PBXProject "Project25-selfie-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926A694A1C99E04100387339 /* Debug */,
+				926A694B1C99E04100387339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		926A694C1C99E04100387339 /* Build configuration list for PBXNativeTarget "Project25-selfie-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926A694D1C99E04100387339 /* Debug */,
+				926A694E1C99E04100387339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 926A69321C99E04000387339 /* Project object */;
+}
